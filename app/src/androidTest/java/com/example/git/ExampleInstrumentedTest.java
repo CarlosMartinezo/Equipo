@@ -21,6 +21,9 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
+        // Imprimir un comentario en la consola Emanuel Reynoso Cortez///
+        Log.d("ExampleInstrumentedTest", "Contexto de la aplicación: " + appContext.getPackageName());
+        
         assertEquals("com.example.git", appContext.getPackageName());
     }
 }
